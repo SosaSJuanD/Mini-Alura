@@ -59,7 +59,8 @@
     flex-direction: column;
 }
 .videoSobre-video{
-    flex-grow: 2;
+    flex-grow: 2;/* aunmentamos el tamaño de la seccion o elemento */
+    flex-shrink: 2;/* conforme se disminuye la pantalla se reduce 2 veces */
 }
 
 .videoSobre-sobre-list{
@@ -111,5 +112,10 @@
     }
     .rodapePrincipal-contatoForm-fieldset{
         justify-content: center;
+    }
+
+    /* Video y ventajas */
+    .videoSobre .container{
+        flex-direction: column;
     }
 }
