@@ -1,3 +1,4 @@
+/* header */
 .headerPrincipal .container{
     display: flex;
     align-items: center;
@@ -7,6 +8,8 @@
 .headerPrincipal-nav{
     display: flex;
 }
+
+/* footer pateocinadores */
 .rodapePrincipal-patrocinadores .container{
     display: flex;
     justify-content: space-between;
@@ -18,10 +21,17 @@
     width: 70%;
     margin-right: 5%;
 }
-
+/* footer pateocinadores formulario */
 .rodapePrincipal-contatoForm{
     width: 25%;
 }
+/* footer mapa de cursos */
 .rodapePrincipal-contatoForm-fieldset{
     display: flex;
+}
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column;/* pone todos los elementos en columnas */
+    height: 260px;
+    flex-wrap: wrap;/* si delimitamos la altura de la columna con height y hacemos uso de esto se dividira en dicha altura  */
 }
