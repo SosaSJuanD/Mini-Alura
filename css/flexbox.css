@@ -46,3 +46,14 @@
     display: flex;
     width: 23%;
 }
+
+/* apartado responsivo */
+
+.headerPrincipal .container{
+    flex-direction: column;
+    align-items: initial;/* volver a la direccion inicial */
+    text-align: center;
+}
+.headerPrincipal-nav{
+    flex-direction: column;
+}
