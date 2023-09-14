@@ -48,6 +48,24 @@
     width: 23%;
 }
 
+/* Seccion de venjas - video */
+.videoSobre .container{
+    display: flex;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.videoSobre-video{
+    flex-grow: 2;
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 2;
+}
+
 /* apartado responsivo */
 @media (max-width:768px){
     /* Header */
@@ -58,6 +76,10 @@
     }
     .headerPrincipal-nav{
         flex-direction: column;
+    }
+
+    .headerPrincipal-nav-link-app{
+        order: -1;
     }
 
     /* Nuestros cursos  */
