@@ -9,6 +9,7 @@
     display: flex;
 }
 
+
 /* footer pateocinadores */
 .rodapePrincipal-patrocinadores .container{
     display: flex;
@@ -35,25 +36,58 @@
     height: 260px;
     flex-wrap: wrap;/* si delimitamos la altura de la columna con height y hacemos uso de esto se dividira en dicha altura  */
 }
+
+
 /* Seccion de cursos */
 .contenidoPrincipal-cursos{
     display: flex;
     flex-wrap: wrap;
-
 }
-
 .contenidoPrincipal-cursos-link{
     display: flex;
     width: 23%;
 }
 
 /* apartado responsivo */
+@media (max-width:768px){
+    /* Header */
+    .headerPrincipal .container{
+        flex-direction: column;
+        align-items: initial;/* volver a la direccion inicial */
+        text-align: center;
+    }
+    .headerPrincipal-nav{
+        flex-direction: column;
+    }
 
-.headerPrincipal .container{
-    flex-direction: column;
-    align-items: initial;/* volver a la direccion inicial */
-    text-align: center;
-}
-.headerPrincipal-nav{
-    flex-direction: column;
+    /* Nuestros cursos  */
+    .contenidoPrincipal-cursos{
+        flex-direction: column;
+    }
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+    }
+
+    /* Footer */
+    /* Mapa de Cursos */
+    .rodapePrincipal-navMap-list{
+        height: auto;
+        flex-wrap: nowrap;
+    }
+    /* Patrocinadores */
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+    .rodapePrincipal-patrocinadores-list{
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    /* Formulario */
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
 }
