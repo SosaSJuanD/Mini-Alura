@@ -35,3 +35,14 @@
     height: 260px;
     flex-wrap: wrap;/* si delimitamos la altura de la columna con height y hacemos uso de esto se dividira en dicha altura  */
 }
+/* Seccion de cursos */
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    width: 23%;
+}
